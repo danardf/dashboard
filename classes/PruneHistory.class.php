@@ -187,7 +187,7 @@ class PruneHistory {
 			if ($avgs[$k] == 1) {
 				$retarr[$k] = $v;
 			} else {
-				$retarr[$k] = $v / $avgs[$k];
+				$retarr[$k] = ($avgs[$k] == 0) ? $v : $v / $avgs[$k];
 			}
 		}
 

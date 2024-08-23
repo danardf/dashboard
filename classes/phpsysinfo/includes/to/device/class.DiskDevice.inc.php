@@ -267,7 +267,7 @@ class DiskDevice
      */
     public function setTotal($total)
     {
-        $this->_total = $total;
+        $this->_total = (int) $total;
     }
 
     /**

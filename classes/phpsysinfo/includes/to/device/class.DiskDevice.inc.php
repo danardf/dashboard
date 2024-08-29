@@ -137,7 +137,7 @@ class DiskDevice
      */
     public function setFree($free)
     {
-        $this->_free = $free;
+        $this->_free = (int) $free;
     }
 
     /**
@@ -293,6 +293,6 @@ class DiskDevice
      */
     public function setUsed($used)
     {
-        $this->_used = $used;
+        $this->_used = (int) $used;
     }
 }
